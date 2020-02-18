@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-éléments</title>
+    <style>
+      p {
+        padding: 10px;
+        border: 3px solid black;
+      }
+
+      p::before {
+        display: block;
+        content: "Avant le paragraphe";
+        font-weight: bold;
+        color: darkred;
+        border: 1px solid red;
+      }
+
+      p::after {
+        display: block;
+        content: "Après le paragraphe";
+        font-weight: bold;
+        color: darkred;
+        border: 1px solid red;
+      }
+
+      ::selection {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-éléments</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, molestias?
+      Fugit, impedit, praesentium tempore iusto velit error magni cupiditate
+      necessitatibus non consectetur officia accusantium vel perspiciatis vitae
+      corporis rerum ipsum! In, dolorem ratione? Cum vero ea dicta voluptatem?
+      Aliquid rem explicabo fugiat consequuntur quae corrupti optio
+      necessitatibus quos cum possimus.
+    </p>
+  </body>
+</html>

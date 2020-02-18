@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Tableaux</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: separate;
+        border-spacing: 10px 20px;
+        table-layout: auto;
+        width: auto;
+      }
+
+      tr {
+        /* border: 1px solid red; */
+      }
+
+      td,
+      th {
+        border: 1px dashed gray;
+      }
+
+      td {
+        /* padding: 10px 20px; */
+      }
+
+      tbody tr:nth-child(2n) td {
+        background-color: lightgreen;
+      }
+      tbody tr:nth-child(2n + 1) td {
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Les tableaux</h1>
+    </header>
+    <main>
+      <table cellpadding="20">
+        <thead>
+          <tr>
+            <th colspan="2">Jour</th>
+            <th>Lundi</th>
+            <th>mardi</th>
+            <th>mercredi</th>
+            <th>jeudi</th>
+            <th>vendredi</th>
+            <th>samedi</th>
+            <th>dimanche</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th rowspan="4">Occupation</th>
+            <th>Semaine 1</th>
+            <td>html</td>
+            <td>css</td>
+            <td>css</td>
+            <td>javascript</td>
+            <td>javascript</td>
+            <td>sortir au resto</td>
+            <td>dormir</td>
+          </tr>
+          <tr>
+            <th>Semaine 2</th>
+            <td>mongodb</td>
+            <td>mongodb</td>
+            <td>Angular</td>
+            <td>Angular</td>
+            <td>Angular</td>
+            <td>dormir</td>
+            <td>faire du sport</td>
+          </tr>
+          <tr>
+            <th>Semaine 3</th>
+            <td>Angular</td>
+            <td>Node</td>
+            <td>Node</td>
+            <td>Websocket</td>
+            <td>Websocket</td>
+            <td>sortir au resto</td>
+            <td>dormir</td>
+          </tr>
+          <tr>
+            <th>Semaine 4</th>
+            <td>Angular</td>
+            <td>Node</td>
+            <td>Node</td>
+            <td>Websocket</td>
+            <td>Websocket</td>
+            <td>sortir au resto</td>
+            <td>dormir</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>3</th>
+            <th>4</th>
+            <th>6</th>
+            <th>4</th>
+            <th>5</th>
+            <th>10</th>
+            <th></th>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>

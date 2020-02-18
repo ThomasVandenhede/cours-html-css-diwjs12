@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Formulaires</title>
+    <style>
+      body {
+        margin-bottom: 300px;
+      }
+
+      input[type="url"]:invalid {
+        color: red;
+      }
+      input[type="url"]:valid {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Les formulaires</h1>
+    </header>
+    <main>
+      <form action="https://www.google.com/" method="POST">
+        <label>
+          Nom <br />
+          <input
+            type="text"
+            name="nom"
+            placeholder="Bon"
+            maxlength="12"
+            required
+          />
+        </label>
+
+        <br />
+
+        <label for="forPrenom">
+          Prénom <br />
+          <input id="forPrenom" type="text" name="prenom" placeholder="Jean" />
+        </label>
+
+        <br />
+
+        <label for="">
+          Email <br />
+          <input type="email" name="email" placeholder="toto@exemple.fr" />
+        </label>
+
+        <br />
+
+        <label for="">
+          Mot de passe <br />
+          <input type="password" name="motDePasse" />
+        </label>
+
+        <br />
+
+        <label for="">
+          Âge <br />
+          <input type="number" name="age" />
+        </label>
+
+        <br />
+
+        <label for="forMale">
+          <input id="forMale" type="radio" value="homme" name="genre" /> H
+        </label>
+
+        <br />
+
+        <label for="forFemale">
+          <input
+            id="forFemale"
+            type="radio"
+            value="femme"
+            name="genre"
+            checked
+          />
+          F
+        </label>
+
+        <br />
+
+        <label for="forCountry">
+          Pays de résidence
+        </label>
+
+        <br />
+
+        <select name="pays" id="forCountry">
+          <option value="angleterre">Angleterre</option>
+          <option value="espagne">Espagne</option>
+          <option value="france">France</option>
+          <option value="russie" selected>Russie</option>
+        </select>
+
+        <br />
+
+        <label for="">
+          Date de naissance <br />
+          <input type="date" name="" id="" />
+        </label>
+
+        <label for="textZone"></label>
+        <textarea
+          name=""
+          id="textZone"
+          cols="40"
+          rows="5"
+          placeholder="Ici tapez une courte description.."
+        ></textarea>
+
+        <br />
+
+        <label for="singing">
+          <input type="checkbox" name="chant" id="singing" checked /> Chant
+          <br />
+        </label>
+        <label for="css">
+          <input type="checkbox" name="css" id="css" /> CSS <br />
+        </label>
+        <label for="football">
+          <input type="checkbox" name="foot" id="football" checked /> Foot
+          <br />
+        </label>
+        <label for="tennis">
+          <input type="checkbox" name="tennis" id="tennis" /> Tennis
+        </label>
+
+        <br />
+        <input type="checkbox" name="" id="" /> Pâtisserie <br />
+
+        <input type="submit" value="Envoyer !" />
+
+        <br />
+
+        <input type="color" name="" id="" />
+
+        <br />
+
+        <input type="file" name="" id="" />
+
+        <br />
+
+        <input type="range" min="0" max="100" name="" id="" />
+
+        <br />
+
+        <input type="search" name="" id="" />
+
+        <br />
+
+        <input type="tel" name="" id="" />
+
+        <br />
+
+        <input type="url" name="" id="" />
+
+        <!-- <button>
+          Envoyer !
+        </button> -->
+      </form>
+    </main>
+  </body>
+</html>

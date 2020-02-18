@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes statiques</title>
+    <style>
+      p:first-of-type {
+        background-color: purple;
+      }
+
+      p:last-of-type {
+        background-color: yellow;
+      }
+
+      p:nth-of-type(3n) {
+        background-color: pink;
+      }
+
+      p:nth-of-type(2),
+      p:nth-of-type(8),
+      p:nth-of-type(9) {
+        background-color: green;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        display: inline-block;
+        width: 120px;
+        border-left: 1px solid black;
+        text-align: center;
+      }
+
+      li:first-child {
+        border: none;
+      }
+
+      div {
+        border: 2px dotted gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-classes statiques</h1>
+
+    <ul>
+      <li>ipsum.</li>
+      <li>natus!</li>
+      <li>culpa?</li>
+      <li>ratione.</li>
+      <li>cupiditate!</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illo!</p>
+    <p>
+      Quas perferendis ipsum reiciendis obcaecati eum doloribus rerum fugit
+      animi.
+    </p>
+    <p>
+      Quasi distinctio quia saepe labore, illum officiis deserunt nulla dicta?
+    </p>
+    <p>
+      Accusamus quas officia ducimus ab vel nemo laboriosam possimus
+      voluptatibus!
+    </p>
+
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Odio aut beatae impedit.</p>
+      <p>Quidem aliquid corporis saepe?</p>
+      <p>Quos autem odit doloribus!</p>
+      <p>Itaque odio quod vitae.</p>
+      <p>Consequatur possimus nostrum et!</p>
+      <p>Libero voluptas ipsum dolor?</p>
+      <p>Atque architecto assumenda esse.</p>
+      <p>Totam, reiciendis! Nesciunt, aut.</p>
+      <p>Fugiat in odit sed!</p>
+      <p>Consequatur possimus nostrum et!</p>
+      <p>Libero voluptas ipsum dolor?</p>
+      <p>Atque architecto assumenda esse.</p>
+      <p>Totam, reiciendis! Nesciunt, aut.</p>
+      <p>Fugiat in odit sed!</p>
+    </div>
+  </body>
+</html>

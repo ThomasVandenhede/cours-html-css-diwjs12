@@ -1,0 +1,30 @@
+p {
+  color: purple;
+  background-color: #ffff00;
+  border: 5px solid red;
+  padding: 10px;
+}
+
+span {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.texte-centre {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#titre2 {
+  color: green;
+  font-size: 30px;
+}
+
+[href$=".html"] {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}

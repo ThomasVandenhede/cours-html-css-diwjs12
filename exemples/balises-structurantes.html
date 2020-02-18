@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balises Structurantes</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      /* breadcrumbs (fil d'arianne) */
+      nav {
+        border-bottom: 1px solid black;
+      }
+
+      .crumbs ol {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .crumb {
+        display: inline-block;
+      }
+
+      .crumb a::after {
+        display: inline-block;
+        color: #000;
+        content: ">";
+        font-size: 80%;
+        font-weight: bold;
+        padding: 0 3px;
+      }
+
+      body > header {
+        background-color: lightpink;
+      }
+
+      main {
+        background-color: lightskyblue;
+      }
+
+      body > footer {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="">lorem1</a>
+            <a href="">lorem1</a>
+            <a href="">lorem1</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <nav class="crumbs">
+        <ol>
+          <li class="crumb"><a href="">Bikes</a></li>
+          <li class="crumb"><a href="">BMX</a></li>
+          <li class="crumb">Jump Bike 3000</li>
+        </ol>
+      </nav>
+      <article>
+        <h1>Lorem, ipsum dolor.</h1>
+        <section>
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est!
+            Laborum blanditiis laboriosam qui libero odit harum molestiae
+            corporis recusandae.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est!
+            Laborum blanditiis laboriosam qui libero odit harum molestiae
+            corporis recusandae.
+          </p>
+        </section>
+        <section>
+          <h2>Lorem ipsum dolor sit.</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est!
+            Laborum blanditiis laboriosam qui libero odit harum molestiae
+            corporis recusandae.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, est!
+            Laborum blanditiis laboriosam qui libero odit harum molestiae
+            corporis recusandae.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

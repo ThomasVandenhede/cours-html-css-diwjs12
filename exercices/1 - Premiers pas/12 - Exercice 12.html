@@ -1,0 +1,61 @@
+<!--
+Nous avons déjà vu des balises block (h1 à h6, p …) et des balises inline (em, strong …). Toutes les balises ont un rôle particulier permettant de préciser le type de contenu de la balise.
+Il existe deux balises générales dont le rôle peut varier en fonction de la situation :
+ _ une balise block : div
+ _ une balise inline : span
+-->
+
+<!--
+	1 - Créez un document contenant trois div.
+	2 - Chaque div a une couleur de fond et une couleur de police différente.
+	3 - Dans chaque div changez la couleur d'une partie du texte (fond et police) grâce à la balise span.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        color: #fff;
+      }
+
+      #div1 {
+        background-color: red;
+      }
+
+      #div2 {
+        background-color: purple;
+      }
+
+      #div3 {
+        background-color: blue;
+      }
+
+      .span {
+        display: inline;
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      Lorem ipsum dolor, sit amet consectetur
+      <span class="span">adipisicing</span> elit. Asperiores magni ut commodi
+      porro amet possimus quis ex? Minima, hic eligendi.
+    </div>
+    <div id="div2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+      <span class="span">magni</span>
+      ut commodi porro amet possimus quis ex? Minima, hic eligendi.
+    </div>
+    <div id="div3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores magni
+      ut commodi <span class="span">amet</span> possimus quis ex? Minima, hic
+      eligendi.
+    </div>
+  </body>
+</html>

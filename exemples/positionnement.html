@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positionnement</title>
+    <style>
+      body {
+        height: 3000px;
+        margin: 0;
+      }
+
+      div {
+        color: white;
+        width: 200px;
+        height: 100px;
+      }
+
+      div:nth-of-type(1) {
+        background-color: red;
+        /* z-index: 0 */
+      }
+      div:nth-of-type(2) {
+        background-color: orange;
+        position: relative;
+        left: 20px;
+        top: 20px;
+        /* z-index: 0 */
+      }
+      div:nth-of-type(3) {
+        background-color: blue;
+        position: absolute;
+        right: 0;
+        top: 0;
+        /* z-index: 0 */
+      }
+      header {
+        background-color: purple;
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        z-index: 1;
+        color: white;
+      }
+
+      .fix-header {
+        height: 80px;
+      }
+
+      section.relative {
+        border: 2px dashed black;
+        height: 300px;
+        position: relative;
+      }
+
+      .retour-en-haut {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: gray;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positionnement</h1>
+
+    <section class="fix-header"></section>
+
+    <div>static</div>
+    <div>relative</div>
+    <div>absolute</div>
+
+    <section class="relative">
+      <div>static</div>
+      <div>relative</div>
+      <div>absolute</div>
+    </section>
+
+    <div class="retour-en-haut"></div>
+  </body>
+</html>

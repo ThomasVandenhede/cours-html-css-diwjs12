@@ -1,0 +1,41 @@
+/* @import url("./keyframes.css"); */
+
+.carre {
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform: rotateZ(45deg);
+    position: relative;
+}
+
+.cercle1, .cercle2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 50% 50%;
+    background-color: red;
+    position: absolute;
+}
+
+.cercle1 {
+    animation: mouvement-horizontal 4000ms ease;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+    transform: translateX(-50%);
+}
+
+.cercle2 {
+    animation: mouvement-vertical 4000ms ease;
+    /* animation-direction: normal; */
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+    transform: translateY(-50%);
+}
+
+/* glow */
+.glow {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 34, 65);
+    animation: glow 1s ease infinite;
+}

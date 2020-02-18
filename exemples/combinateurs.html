@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinateurs - Partie 1</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-style: italic;
+      }
+
+      ul li {
+        border: 1px solid green;
+        padding: 5px;
+        color: hsl(0, 100%, 50%); /* hue saturation lightness */
+        background-color: rgba(255, 0, 0, 0.404);
+        /* red green blue alpha */
+      }
+
+      ul > li {
+        border: 2px solid purple;
+      }
+
+      .warning {
+        color: orange;
+      }
+
+      h1.warning {
+        color: orangered;
+      }
+
+      h2.warning#unique-title[title] {
+        color: rgb(255, 38, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="warning">Les combinateurs CSS - Partie 1</h1>
+
+    <h2 class="warning" id="unique-title" title="des infos en plus">
+      Premier combinateur
+    </h2>
+
+    <h3>Titre de niveau 3</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et,
+      sapiente voluptates nobis accusamus tempora omnis soluta vel culpa.
+      Maxime.
+    </p>
+
+    <h2 class="warning">Second combinateur</h2>
+
+    <h3>Titre de niveau 3</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et,
+      sapiente voluptates nobis accusamus tempora omnis soluta vel culpa.
+      Maxime.
+    </p>
+
+    <h2>Troisième combinateur</h2>
+
+    <h3>Titre de niveau 3</h3>
+
+    <p class="warning">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et,
+      sapiente voluptates nobis accusamus tempora omnis soluta vel culpa.
+      Maxime.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et,
+      sapiente voluptates nobis accusamus tempora omnis soluta vel culpa.
+      Maxime.
+    </p>
+
+    <ul>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Ab, accusamus fugiat.</li>
+      <li>Officia, possimus? Assumenda.</li>
+      <li>
+        <ol>
+          <li>Lorem, ipsum.</li>
+          <li>Esse, ut!</li>
+        </ol>
+      </li>
+    </ul>
+  </body>
+</html>

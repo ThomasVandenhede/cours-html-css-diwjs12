@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      figure {
+        border: thin #c0c0c0 solid;
+        padding: 5px;
+        max-width: 220px;
+        margin: auto;
+      }
+
+      img {
+        max-width: 220px;
+        max-height: 150px;
+      }
+
+      figcaption {
+        /* font: italic smaller sans-serif; */
+        background-color: #222;
+        color: #fff;
+        padding: 3px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <figure>
+        <img src="./images/elephant-660-480.jpg" alt="Elephant at sunset" />
+        <figcaption>An elephant at sunset</figcaption>
+      </figure>
+
+      <video width="400" autoplay muted loop>
+        <source src="videos/flower.mp4" type="video/mp4" />
+
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+
+      <audio autoplay controls muted>
+        <source src="./audio/t-rex-roar.mp3" type="audio/mpeg" />
+        <p>
+          Votre navigateur ne prend pas en charge l'audio HTML. Voici un un
+          <a href="myAudio.mp4">lien vers le fichier audio</a> pour le
+          télécharger.
+        </p>
+      </audio>
+    </main>
+  </body>
+</html>
